@@ -1,0 +1,582 @@
+// Scss Document
+$primary: #6E0D88;
+$secondary: #EF1855;
+$alternative: #FDEC07;
+$black: #04000A;
+$gray: #5A5A5A;
+$light-gray: #BEBEBE;
+$light-gray2: #EBEBEB;
+$light-bg: #FDF8FF;
+$off-white: #f8f8f8;
+$white: #fff;
+$footer-bg: #FEF9F3;
+
+@font-face {
+	font-family: 'nirmala_uiregular';
+	src: url('../fonts/nirmala-webfont.woff2') format('woff2'),
+		url('../fonts/nirmala-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+body {
+	background: $off-white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $gray;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+p {
+	color: $gray;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.mlr-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 10px;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: $primary;
+		border-radius: 10px;
+	}
+
+	.tooltip-top {
+		height: 44px;
+		font-size: 16px;
+		background-color: $primary;
+		color: $white;
+		padding: 8px;
+		text-align: center;
+
+		.month {
+			color: $white;
+			font-weight: 700;
+		}
+
+		img {
+			margin-right: 10px;
+		}
+
+		.trial-free {
+			font-weight: 700;
+			color: $alternative;
+			margin-left: 9px;
+		}
+	}
+
+	.subtooltip {
+		background: $white 0% 0% no-repeat padding-box;
+		width: fit-content;
+		box-shadow: 0px 0px 3px $gray;
+		margin: auto;
+		padding: 10px 30px 15px;
+		border-radius: 0px 0px 40px 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		/* User Dropdown*/
+		.dropdown-user {
+			width: 260px;
+			padding: 20px;
+			border-radius: 0px 0 20px 20px;
+			box-shadow: 0px 4px 6px $light-gray2;
+			margin-top: 13px;
+		}
+
+		.user-box {
+			display: flex;
+			padding: .25rem 13px;
+		}
+
+		.user-box .u-text {
+			padding: 0 0px;
+		}
+
+		.user-box .u-text h4 {
+			margin-bottom: 5px;
+			margin-top: 4px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1;
+		}
+
+		.user-box .u-text .text-muted {
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+
+		.user-box .u-text .btn {
+			font-size: 11px;
+		}
+
+		.dropdown-toggle:after {
+			display: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		.caret {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin-left: .255em;
+			vertical-align: .255em;
+			content: "";
+			border-top: .3em solid;
+			border-right: 0.3em solid transparent;
+			border-bottom: 0;
+			border-left: 0.3em solid transparent;
+		}
+
+		.top-user-profile a.profile-pic {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.top-user-profile p {
+			margin-bottom: 0;
+			margin-left: 10px;
+			color: $black;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.avatar-sm {
+			margin-right: 10px;
+		}
+
+		.avatar-sm img {
+			width: 31px;
+			height: 31px;
+			border-radius: 100%;
+			border: 1px solid $primary;
+		}
+
+		.progress-bar {
+			background: $primary;
+		}
+
+		.devider {
+			margin-left: 15px;
+			margin-right: 15px;
+			border-right: 1px solid $light-gray2;
+		}
+
+		.meeting-time {
+			color: $secondary;
+			font-weight: normal;
+			font-size: 16px;
+			margin-right: 22px;
+			position: relative;
+			cursor: pointer;
+
+			.tooltip {
+				font-size: 14px;
+				position: absolute;
+				bottom: calc(100% + -58px);
+				left: 50%;
+				transform: translateX(-50%);
+				padding: 6px 12px;
+				background-color: $white;
+				border: 1px solid $light-gray2;
+				color: $black;
+				border-radius: 4px;
+				white-space: nowrap;
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity 0.2s ease, visibility 0.2s ease;
+				font-weight: 500;
+			}
+		}
+
+		.meeting-time:hover .tooltip {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.prgrs {
+			font-size: 12px;
+			font-weight: 500;
+
+			span {
+				font-size: 12px;
+				font-weight: 500;
+			}
+
+			.progress {
+				margin-top: 5px;
+				height: 6px;
+			}
+		}
+
+		.plan {
+			display: flex;
+			align-items: flex-start;
+			margin-top: 16px;
+
+			.main {
+				margin-left: 10px;
+
+				.ttl1 {
+					font-size: 13px;
+					color: $gray;
+					font-weight: 500;
+				}
+
+				.ttl2 {
+					font-size: 15px;
+					color: $primary;
+					font-weight: 700;
+					padding: 2px 0;
+				}
+
+				a {
+					font-size: 12px;
+					color: $secondary;
+					font-weight: 500;
+				}
+			}
+		}
+
+		.form-switch {
+			padding-left: 2.5em;
+		}
+
+		.form-check {
+			display: block;
+			min-height: 1.5rem;
+			margin-left: auto;
+		}
+
+		.form-switch .form-check-input {
+			background: url("../images/swich-round.svg") no-repeat;
+			border: 1px solid $light-gray;
+			width: 2.5em;
+			height: 1.2em;
+			background-position: left center;
+			margin-left: -36px;
+			border-radius: 2em;
+			transition: background-position .15s ease-in-out;
+			margin-top: 0.25em;
+			vertical-align: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			-webkit-print-color-adjust: exact;
+			color-adjust: exact;
+			print-color-adjust: exact;
+		}
+
+		.form-switch .form-check-input:checked {
+			background-position: right center !important;
+			background: url("../images/swich-round-white.svg") no-repeat;
+			background-color: $secondary;
+			border-color: $secondary;
+		}
+
+		.dark-mode {
+			display: flex;
+			align-items: center;
+
+			.dark-mode-text {
+				color: $black;
+			}
+		}
+
+		.dropdown-item {
+			padding: 0.25rem 0;
+			color: $black;
+		}
+
+		.dropdown-item:hover {
+			background: none;
+		}
+
+		.meting-time:hover .tooltip {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.search {
+			position: relative;
+
+			.form-control {
+				padding: 0 0;
+				border-radius: 0;
+				border-bottom: 1px solid $light-gray2;
+				border-width: 0 0 1px 0;
+			}
+		}
+
+		.search-ttl {
+			color: $black;
+		}
+
+		.search:before {
+			position: absolute;
+			content: "";
+			right: 0;
+			top: 10px;
+			width: 15px;
+			height: 15px;
+			background: url("../images/search.svg") no-repeat;
+			background-size: 14px;
+		}
+
+		.team-scrl {
+			font-size: 12px;
+			color: $gray;
+			margin-top: 12px;
+			max-height: 100px;
+			overflow: auto;
+
+			.user2 {
+				width: 24px;
+				height: 24px;
+				border-radius: 100%;
+				margin-right: 5px;
+			}
+
+			.team {
+				margin-bottom: 8px;
+
+				a {
+					color: $black;
+					font-size: 13px;
+				}
+			}
+
+		}
+
+		.bel-drpd {
+			.dropdown-user {
+				width: 300px;
+				padding-bottom: 0;
+				padding-left: 0;
+				padding-right: 0;
+				border-radius: 0px 20px 20px 20px;
+
+				li {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+
+				.dropdown-divider {
+					margin-top: 18px;
+					margin-bottom: 18px;
+				}
+			}
+
+			.tt1 {
+				font-size: 14px;
+				color: $black;
+				position: relative;
+				padding-left: 15px;
+
+				span {
+					font-weight: 600;
+					color: $black;
+				}
+			}
+
+			.tt1:before {
+				position: absolute;
+				background: $primary;
+				width: 7px;
+				height: 7px;
+				border-radius: 20px;
+				content: "";
+				left: 0;
+				top: 6px;
+			}
+
+			.tt2 {
+				font-size: 14px;
+				color: $black;
+				font-weight: 600;
+				padding-left: 15px;
+				margin-top: 5px;
+			}
+
+			.btn-sect {
+				margin-top: 8px;
+			}
+
+			a img {
+				margin-right: 3px;
+			}
+
+			.accept {
+				font-size: 14px;
+				color: $primary;
+				font-weight: 600;
+				padding-left: 15px;
+			}
+
+			.decline {
+				font-size: 14px;
+				color: $secondary;
+				font-weight: 600;
+				padding-left: 15px;
+			}
+
+			.view-all {
+				padding: 10px;
+				border-radius: 0px 0 20px 20px;
+				background: $off-white;
+				text-align: center;
+				margin-top: 20px;
+
+				a {
+					color: $black;
+				}
+			}
+
+			.bell {
+				position: relative;
+
+				span.cercle {
+					position: absolute;
+					width: 7px;
+					height: 7px;
+					border-radius: 25px;
+					background: $secondary;
+					right: 4px;
+					top: 1px;
+					border: 1px solid $white;
+				}
+			}
+		}
+
+		.map-drpd {
+			margin-left: 15px;
+
+			.dropdown-user {
+				width: 320px;
+				padding: 0;
+				border-radius: 0px 20px 20px 20px;
+
+				li {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+
+				.dropdown-divider {
+					margin-top: 18px;
+					margin-bottom: 18px;
+				}
+
+				.progress {
+					margin-bottom: 8px;
+					margin-top: 20px;
+				}
+
+				.top {
+					border-radius: 0px 20px 10px 10px;
+					background: $primary;
+					display: flex;
+					align-items: center;
+					padding: 10px 20px;
+
+					.text {
+						margin-right: 15px;
+					}
+
+					.ttl {
+						font-size: 16px;
+						color: $alternative;
+						font-weight: 600;
+					}
+
+					.ttl2 {
+						font-size: 12px;
+						color: $white;
+						font-weight: 400;
+					}
+				}
+
+				.list-sect {
+					display: flex;
+					align-items: flex-start;
+					border: 1px solid $light-gray2;
+					border-radius: 5px;
+					padding: 8px;
+					margin-top: 20px;
+
+					.text-sect {
+						margin-left: 10px;
+
+						.ttl {
+							font-size: 13px;
+							color: $black;
+							font-weight: 600;
+						}
+
+						p {
+							font-size: 12px;
+							color: $gray;
+							font-weight: 500;
+							margin: 0;
+						}
+					}
+				}
+
+				.btn-sect {
+					margin: 20px 0;
+				}
+
+				.boost {
+					font-size: 14px;
+					color: $secondary;
+					font-weight: 400;
+					text-decoration: none;
+				}
+
+				.help {
+					font-size: 14px;
+					color: $gray;
+					font-weight: 400;
+					text-decoration: none;
+					display: block;
+					margin-top: 10px;
+				}
+
+
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,630 @@
+.container-width {
+    max-width: 800px;
+    width: 100%;
+    margin: 0;
+}
+.GroupWrapper {
+    @media (max-width:1600px) {
+        padding-left: 60px;
+    }
+    .SidebarDetailsWrap {
+        .SidebarDetailsHeader {
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            h1 {
+                display: inline-flex;
+                font: normal normal 600 18px/24px Poppins;
+                color: #000000;
+                margin: 0;
+                img {
+                    margin-right: 7px;
+                    width: 16px;
+                }
+            }
+            button {
+                img {
+                    margin-right: 4px;
+                    width: 14px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+    .ConentWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        @media (max-width: 1280px) {
+            flex-wrap: wrap;
+        }
+        .CurrentDetails {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            @media (max-width: 1280px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            img {
+                max-width: 70px;
+                margin-right: 7px
+            }
+            h4 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        .CurrentLocation {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            @media (max-width: 980px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            img {
+                width: 24px;
+                margin-right: 10px;
+            }
+            p {
+                font: normal normal 500 14px/25px Poppins;
+                color: #000000;
+            }
+        }
+        .CurrentNumber {
+            margin-right: 20px;
+            font: normal normal 500 14px/25px Poppins;
+            color: #000000;
+            @media (max-width: 980px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        .CurrentSituation {
+            font: normal normal 500 14px/25px Poppins;
+            color: #18A705;
+            white-space: nowrap;
+            @media (max-width: 980px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.ValuesText {
+    font: normal normal 600 16px/25px Poppins;
+    color: #000000;
+}
+.PurpleLabels {
+    font: normal normal 500 15px/25px Poppins;
+    color: #6E0D88;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.input-style {
+    border: 1px solid rgba(34,36,38,0.15);
+    border-radius: 4px;
+    background: transparent;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px 14px;
+    font: normal normal normal 14px/18px Poppins;
+    color: #707070;
+    z-index: 1;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+
+
+.UpDownList {
+    max-width: 650px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    li {
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        .EditButton {
+            display: none;
+        }
+        &:hover {
+            .EditButton {
+                display: inline;
+                position: absolute;
+                right: 24px;
+                top: 6px;
+                background-color: transparent;
+                border: 0;
+                img {
+                    width: 14px;
+                }
+            }
+        }
+        .Top {
+            display: flex;
+            align-items: flex-start;
+        }
+        h4 {
+            margin-top:5px;
+        }
+        .QuestionNumber {
+            width:55px;
+            font: normal normal 600 14px/20px Poppins;
+            letter-spacing: 0px;
+            color: #E1003E;
+            margin-top:6px;
+        }
+        .IcSort {
+            margin-left: 14px;
+            margin-top: 4px;
+        }
+        .FormControl,
+        .InputGlobal {
+            width: 100%;
+        }
+        .CheckboxWrap {
+            padding-left: 46px;
+        }
+        .InputGlobalSM {
+            width: 300px;
+            margin-left: 14px;
+        }
+    }
+}
+.AddQuestionBtn {
+    text-align: left;
+    font: normal normal 600 16px/25px Poppins;
+    color: #E1003E;
+    border: 0;
+    background: none;
+}
+.EditorWrapper2 {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    .BtnWrapper2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+  #GstVatBtn2 {
+    text-align: left;
+    img {
+        margin-right: 7px;
+        width: 14px;
+    }
+  }
+  .GstVat2 {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 0px 14px 14px;
+    position: absolute;
+    top: 68px;
+    z-index: 999;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 10px 20px 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        border-radius: 10px;
+        li {
+            padding: 14px 10px 0 10px;
+            cursor: pointer;
+            img {
+                margin-right: 10px;
+            }
+            h5 {
+                margin: 0;
+            }
+            p {
+                margin: 0 0 0 25px;
+                font-size: 12px;
+                text-align: left;
+                padding: 0;
+            }
+        }
+    }
+  }
+
+  .select-styles-global {
+    width: 100%;
+    max-width: 100%;
+    height: 46px;
+    background: #fff url(../images/common-assets/ic-down-arrow.svg) no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 12px) center;
+    border: 1px solid #D9D9D9;
+    padding: 10px 30px 10px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+}
+
+
+
+.EditorWrapper1 {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    .LabelActive {
+        background: #D6FFC9 0% 0% no-repeat padding-box;
+        border-radius: 22px;
+        padding: 2px 12px;
+        font: normal normal bold 16px/27px Poppins;
+        letter-spacing: 0px;
+        color: #1E8003;
+        white-space: nowrap;
+    }
+    .LabelInactive {
+        background: #FEEBEB 0% 0% no-repeat padding-box;
+        border-radius: 22px;
+        padding: 2px 12px;
+        font: normal normal bold 16px/27px Poppins;
+        letter-spacing: 0px;
+        color: #E1003E;
+        white-space: nowrap;
+    }
+    .input-switch{
+        display: none;
+    }
+    
+    .label-switch{
+        display: inline-block;
+        position: relative;
+    }
+    
+    .label-switch::before, .label-switch::after{
+        content: "";
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .label-switch::before {
+        width: 40px;
+        height: 20px;
+        border: 0px solid #757575;
+        border-radius: 25px;
+        background: #888888;
+    }
+    
+    .label-switch::after {
+        position: absolute;
+        left: 0;
+        top: -20%;
+        width: 20px;
+        height: 20px;
+        border: 0px solid #757575;
+        border-radius: 4em;
+        background: #ffffff;
+        margin-top: 6px;
+    }
+    
+    .input-switch ~ .label-switch::after {
+        background: #ccc;
+        border-color: #ccc;
+    }
+    .input-switch ~ .label-switch::before {
+        background: #f1f1f1;
+    }
+    
+    
+    
+    .input-switch:checked ~ .label-switch::before {
+        background: #f1f1f1;
+        border-color: #f1f1f1;
+    }
+    
+    .input-switch:checked ~ .label-switch::after {
+        left: unset;
+        right: 0;
+        background: #00ce00;
+        border-color: #009a00;
+    }
+    .info-text {
+        display: block;
+    }
+    .SmallText {
+        text-align: left;
+        font-size: 14px;
+        color: #707070;
+    }
+    .AddCstmlIinkBtn {
+        background-color: var(--white);
+        color: var(--purple);
+        border: 1px solid var(--purple);
+        border-radius: 7px;
+        padding: 6px 20px;
+        font: 600 14px/24px Poppins;
+    }
+    .BtnWrapper1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.Detailswrap {
+    margin-top: 70px;
+    p {
+        text-align: left;
+        font-size: 12px;
+        color: #707070;
+        padding: 0;
+    }
+}
+#GstVatBtn1 {
+    text-align: left;
+    img {
+        margin-right: 7px;
+        width: 14px;
+    }
+  }
+  .GstVat1 {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 0px 14px 14px;
+    position: absolute;
+    top: 68px;
+    z-index: 999;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 10px 20px 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        border-radius: 10px;
+        li {
+            padding: 14px 10px 0 10px;
+            cursor: pointer;
+            h5 {
+                margin: 0;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+  }
+
+  .AddAnother {
+    font: normal normal 500 13px/25px Poppins;
+    color: #6E0D88;
+    background: none;
+    border: 0;
+}
+
+.ContainerModalMd {
+    .UpDownList {
+        padding-top: 0;
+        padding-left: 0;
+       li {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 14px;
+            cursor: pointer;
+            .IcSort {
+                margin-right: 14px;
+            }
+        }
+    }
+}
+.InputGlobal {
+    font: normal normal 500 14px/50px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.GlobalTextarea {
+    border: solid 1px #e1e1e1;
+    width: 100%;
+    height: 100px;
+    padding:8px 12px !important;
+    resize: none;
+    border-radius: 4px;
+    font: normal normal 500 14px/50px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    line-height: 26px;
+}
+.GlobalLabelPurple {
+    font: normal normal 500 14px/22px Poppins;
+    color: #6E0D88;
+    width: 100%;
+}
+
+#AddQuestion, #EditQuestion {        
+    .LabelActive {
+        background: #D6FFC9 0% 0% no-repeat padding-box;
+        border-radius: 22px;
+        padding: 2px 12px;
+        font: normal normal bold 16px/27px Poppins;
+        letter-spacing: 0px;
+        color: #1E8003;
+        white-space: nowrap;
+    }
+    .LabelInactive {
+        background: #FEEBEB 0% 0% no-repeat padding-box;
+        border-radius: 22px;
+        padding: 2px 12px;
+        font: normal normal bold 16px/27px Poppins;
+        letter-spacing: 0px;
+        color: #E1003E;
+        white-space: nowrap;
+    }
+    .input-switch{
+        display: none;
+    }
+    
+    .label-switch{
+        display: inline-block;
+        position: relative;
+    }
+    
+    .label-switch::before, .label-switch::after{
+        content: "";
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .label-switch::before {
+        width: 40px;
+        height: 20px;
+        border: 0px solid #757575;
+        border-radius: 25px;
+        background: #888888;
+    }
+    
+    .label-switch::after {
+        position: absolute;
+        left: 0;
+        top: -20%;
+        width: 20px;
+        height: 20px;
+        border: 0px solid #757575;
+        border-radius: 4em;
+        background: #ffffff;
+        margin-top: 6px;
+    }
+    
+    .input-switch ~ .label-switch::after {
+        background: #ccc;
+        border-color: #ccc;
+    }
+    .input-switch ~ .label-switch::before {
+        background: #f1f1f1;
+    }
+    
+    
+    
+    .input-switch:checked ~ .label-switch::before {
+        background: #f1f1f1;
+        border-color: #f1f1f1;
+    }
+    
+    .input-switch:checked ~ .label-switch::after {
+        left: unset;
+        right: 0;
+        background: #00ce00;
+        border-color: #009a00;
+    }
+    .info-text {
+        display: block;
+    }
+    
+    // .info-text::before{
+    //     content: "INACTIVE";
+    //     color: #E1003E;
+    //     font-weight: 600;
+    //     margin-left: 4px;
+    // }
+    
+    // .input-switch:checked ~ .info-text::before{
+    //     content: "ACTIVE";
+    //     color: #00ce00;
+    //     font-weight: 600;
+    //     margin-left: 6px;
+    // }
+}
+.Mandatory {
+    color: red;
+}
+.modal.CustomModal .modal-dialog {
+    max-width: 550px !important;
+}
+.form-check-input {
+    &:checked {
+      background-color: #E1003E;
+      border-color: #E1003E;
+    }
+  }
+    [type="checkbox"]:checked + label,
+    [type="checkbox"]:not(:checked) + label
+    {
+        padding-left: 5px;
+        cursor: pointer;
+        font: normal normal 500 13px/25px Poppins;
+        color: #000000;
+    }
+
+  // custom radio button css open
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    font: normal normal 500 13px/25px Poppins;
+    color: #000000;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #E1003E;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+// custom radio button css close
+.maxwidth600 {
+    max-width: 620px;
+    width: 100%;
+}
+
+
+
+
+    
